@@ -56,9 +56,12 @@ def build_card(payload):
         with open(work / "data.json", "w", encoding="utf-8") as f:
             json.dump(data, f, ensure_ascii=False)
 
+        # Teruskan sys.path ke subprocess agar Pillow (dependency Vercel) ditemukan
+        env = os.environ.copy()
+        env["PYTHONPATH"] = os.pathsep.join(p for p in sys.path if p)
         proc = subprocess.run(
             [sys.executable, "create.py"],
-            cwd=work, capture_output=True, text=True, timeout=30,
+            cwd=work, capture_output=True, text=True, timeout=30, env=env,
         )
         result = work / "src" / "result.png"
         if proc.returncode != 0 or not result.exists():
