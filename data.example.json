@@ -1,0 +1,21 @@
+{
+  "name": "INDONESIA",
+  "next": "JAKARTA SELATAN",
+  "ids": "HEN-1919128",
+  "nama": " Henkarmazov",
+  "bio": "ingin jadi programer",
+  "jenis_kelamin": "Laki-laki",
+  "golongan_darah": "O",
+  "skil": "Fullstack Developer",
+  "html": "Mahir",
+  "css": "Mahir",
+  "js": "Menengah",
+  "website": "budisantoso.dev",
+  "status": "Sibuk Ngoding",
+  "pekerjaan": "Software Engineer",
+  "kewarganegaraan": "WNI",
+  "masa_berlaku": "Seumur Hidup",
+  "kota": "Jakarta",
+  "terbuat": "27-10-2026",
+		"pas_photo":"src/image.jpg"
+}

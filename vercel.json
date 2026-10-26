@@ -1,0 +1,8 @@
+{
+  "functions": {
+    "api/generate.py": {
+      "includeFiles": "{create.py,font/**,src/Template.png}",
+      "maxDuration": 30
+    }
+  }
+}
