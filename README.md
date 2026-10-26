@@ -10,6 +10,6 @@ Input manual via form web (tanpa edit data.json), mendukung upload foto.
 
 ## Struktur
 - public/index.html  : form input + upload foto
-- api/generate.py    : serverless function (menjalankan create.py)
+- app.py             : Flask app (endpoint /api/generate) (menjalankan create.py)
 - create.py, font/, src/Template.png : file asli
 - data.example.json  : contoh format data lama (tidak dipakai lagi)
